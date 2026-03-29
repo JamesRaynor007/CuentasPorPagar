@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Account Payables Resume</title>
-    <!-- Incluyendo Chart.js desde CDN -->
+    <!-- Solo carga Chart.js y plugin una vez en el head -->
+    <!-- Incluyendo Chart.js y plugin datalabels desde CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <!-- Tu CSS -->
     <link rel="stylesheet" href="StyleAP.css" />
 </head>
 <body>
@@ -38,12 +41,7 @@
         <canvas id="myChart"></canvas>
     </div>
 
-    <!-- Incluyendo el script JS al final del body para asegurar que el DOM esté cargado -->
+    <!-- Incluye tu script personalizado al final, después de cargar las librerías -->
     <script src="JavaScript/JavaScriptAP.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
-
-    
-
 </body>
 </html>
